@@ -1,0 +1,18 @@
+using System;
+using System.Windows.Forms;
+using SegurancaEletricaEmCasa.Forms;
+
+namespace SegurancaEletricaEmCasa
+{
+    //Ponto de entrada da aplicação (equivalente ao "Main" de qualquer app Windows Forms).
+    internal static class Program
+    {
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new StartForm());
+        }
+    }
+}
